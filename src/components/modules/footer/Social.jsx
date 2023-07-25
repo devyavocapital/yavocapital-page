@@ -4,7 +4,7 @@ import Phone from "./Phone";
 
 const Social = () => {
 	return (
-		<div className="col-span-1 grid">
+		<div className="col-span-1 grid w-11/!2">
 			<Phone />
 			<div className="flex justify-center my-4 md:m-0">
 				{socials.map((social) => (

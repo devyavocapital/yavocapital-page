@@ -1,94 +1,81 @@
-import { useState } from "react";
-import { menuItemsEn, menuItemsEs } from "../../../utils/menu";
-import Button from "../common/Button";
-import Item from "./Item";
+import { Dropdown } from "flowbite-react";
+import { Link } from "react-router-dom";
+import useLanguage from "../../../hooks/useLanguage";
 
-const Menu = ({ language, handleLanguage }) => {
-	const [menu, setMenu] = useState(true);
-
-	const classesButton =
-		"inline-flex justify-center hover:text-white items-center md:m-3 md:p-2 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-orange-700 hover:border-orange-700";
-
-	const handleMenu = () => setMenu(!menu);
+const Menu = () => {
+	const { language, handleLanguage } = useLanguage();
 
 	return (
-		<>
-			<div className="max-[640px]:hidden">
-				<ul className="flex text-white ">
-					{language
-						? menuItemsEn.map(({ name, href, title }) => (
-								<Item key={name} name={name} href={href} title={title} />
-						  ))
-						: menuItemsEs.map(({ name, href, title }) => (
-								<Item key={name} name={name} href={href} title={title} />
-						  ))}
-					<Button
-						value={!language ? "EN" : "ES"}
-						arrowDown={true}
-						onclick={handleLanguage}
-						classes={classesButton}
-					/>
-				</ul>
-			</div>
-			<div className="bg-[rgb(237, 107, 55)] min-[640px]:hidden transition-all relative">
-				{menu && (
-					<ul className="grid text-white">
-						{language
-							? menuItemsEn.map(({ name, href, title }) => (
-									<Item key={name} name={name} href={href} title={title} />
-							  ))
-							: menuItemsEs.map(({ name, href, title }) => (
-									<Item key={name} name={name} href={href} title={title} />
-							  ))}
-						<Button
-							value={!language ? "EN" : "ES"}
-							arrowDown={true}
-							onclick={handleLanguage}
-							classes={classesButton}
-						/>
-					</ul>
-				)}
-				<button
-					type="button"
-					onClick={handleMenu}
-					className="absolute -top-[50px] right-[10px] w-[50px] h-[50px] border-2 border-gray-900"
+		<nav className="bg-white border-gray-200 w-full">
+			<div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+				<Link to="/" className="flex items-center">
+					<img src="/logo.webp" className="h-8 mr-3" alt="Yavo capital Logo" />
+				</Link>
+				<div className="flex items-center md:order-2">
+					<Dropdown inline label={language ? "Language" : "Idioma"}>
+						<Dropdown.Item onClick={() => handleLanguage(true)}>
+							{language ? "English" : "Inglés"}
+						</Dropdown.Item>
+						<Dropdown.Item onClick={() => handleLanguage(false)}>
+							{language ? "Spanish" : "Español"}
+						</Dropdown.Item>
+					</Dropdown>
+					{/* <a
+						href="local"
+						className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+					>
+						Login
+					</a>
+					<a
+						href="local"
+						className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+					>
+						Sign up
+					</a> */}
+				</div>
+				<div
+					id="mega-menu"
+					className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
 				>
-					{menu ? (
-						// rome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							strokeWidth={1.5}
-							stroke="currentColor"
-							className="w-6 h-6 mx-auto"
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								d="M6 18L18 6M6 6l12 12"
-							/>
-						</svg>
-					) : (
-						// rome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							strokeWidth={1.5}
-							stroke="currentColor"
-							className="w-6 h-6 mx-auto"
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-							/>
-						</svg>
-					)}
-				</button>
+					<ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+						<li>
+							<Link
+								to="/vehiculo-financiero"
+								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+								aria-current="page"
+							>
+								{language ? "Who are we?" : "¿Quienes Somos?"}
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="/productos-financieros"
+								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+								aria-current="page"
+							>
+								{language ? "Financial Products" : "Productos Financieros"}
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="/mejorasi"
+								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+							>
+								MEJORASÍ
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="local"
+								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+							>
+								{language ? "Contact Us" : "Contáctanos"}
+							</Link>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</>
+		</nav>
 	);
 };
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Button = ({
 	classes,
 	value,
@@ -7,7 +9,7 @@ const Button = ({
 	onclick = false,
 }) => {
 	return href ? (
-		<a href={href} className={classes}>
+		<Link to={href} className={classes}>
 			{value}
 			{arrowLeft && (
 				// rome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
@@ -27,7 +29,7 @@ const Button = ({
 					/>
 				</svg>
 			)}
-		</a>
+		</Link>
 	) : (
 		<button type="button" onClick={onclick} className={classes}>
 			{value}
@@ -45,6 +47,24 @@ const Button = ({
 						strokeLinecap="round"
 						strokeLinejoin="round"
 						d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+					/>
+				</svg>
+			)}
+			{arrowLeft && (
+				// rome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+				<svg
+					className="w-3.5 h-3.5 ml-2 my-auto"
+					aria-hidden="true"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 14 10"
+				>
+					<path
+						stroke="currentColor"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						strokeWidth="2"
+						d="M1 5h12m0 0L9 1m4 4L9 9"
 					/>
 				</svg>
 			)}

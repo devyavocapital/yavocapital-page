@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+@layer components {
+    .colorPrimary {
+        color: #F9A400;
+    }
+
+    .backgroundPrimary {
+        background: #F9A400;
+    }
+}

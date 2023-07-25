@@ -2,7 +2,7 @@ import Image from "../common/Image";
 
 const Description = () => {
 	return (
-		<div className="text-white text-justify grid">
+		<div className="text-white text-justify grid w-11/12">
 			<Image
 				classes={"w-[200px] mx-auto mt-3 md:mx-0 "}
 				name={"yavo"}

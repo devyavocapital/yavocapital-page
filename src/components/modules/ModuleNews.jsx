@@ -13,6 +13,8 @@ const ModuleNews = ({ buttonValue }) => {
 						<a
 							href={href}
 							className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800 mx-auto"
+							target="_blank"
+							rel="noreferrer"
 						>
 							{buttonValue}
 						</a>

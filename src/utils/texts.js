@@ -78,3 +78,72 @@ export const home = {
 		],
 	},
 };
+
+export const meetUs = {
+	es: {
+		title: "¿Quiénes Somos? Un Vehículo Financiero.",
+		subtitles: [
+			{
+				id: 1,
+				description:
+					"Somos un vehículo financiero enfocado a contribuir en el sector bienes raíces y mejorar la calidad del segmento vivienda, a través de ofrecer productos financieros innovadores y crear alianzas estratégicas con desarrolladores, Inversionistas, Entidades Gubernamentales, etc. Nuestro objetivo es ser un vínculo proactivo en cada etapa del crédito para poder garantizar el éxito de tus proyectos.",
+			},
+		],
+		opinions: [
+			{
+				id: 1,
+				title: "Descubre lo que los medios hablan de YAVO Capital:",
+				subtitle:
+					'"Con producto crediticio buscan impulsar vivienda y economía de México:',
+				description:
+					'Crédito Integral está dirigido a los desarrolladores de vivienda social y sus ventajas, de acuerdo con jugadores financieros del sector como Yavo Capital, generarían una derrama económica de alrededor de 30,000 MDP y detonarían 72 ramas económicas".',
+				href: "https://www.forbes.com.mx/con-producto-crediticio-buscan-impulsar-vivienda-y-economia-de-mexico/",
+				img: "/opinion-forbes.webp",
+				logo: "/forbes-mexico-logo.webp",
+			},
+		],
+	},
+	en: {
+		title: "WHO ARE WE?",
+		subtitles: [
+			{
+				id: 1,
+				description:
+					"We are a Financial Company focused on contributing to the Real Estate sector and improving the quality of the housing segment in Mexico, offering innovative financial products and strategic alliances.",
+			},
+			{
+				id: 2,
+				description:
+					"Our main objective is to be a proactive link in each stage providing smart money, financial and housing advice  to guarantee the success of each of our clients.",
+			},
+			{
+				id: 3,
+				description:
+					"Our team has experience of more than 138 years together in housing, investment funds, portfolio management, mortgage loan, origination, and construction loans.",
+			},
+			{
+				id: 4,
+				description:
+					"We cover the whole nation and have projects currently operating in Chihuahua, Chiapas, Sonora, Sinaloa, Tamaulipas, Baja California, Durango, Jalisco, Nuevo Leon, Yucatán and Guanajuato.",
+			},
+			{
+				id: 5,
+				description:
+					"Under our management, we have more than 20,000 homes throughout the country. In more than 15 States and 33 cities.",
+			},
+		],
+		opinions: [
+			{
+				id: 1,
+				title: "Find out what the media are talking about from YAVO Capital:",
+				subtitle:
+					'"With a credit product they seek to boost housing and the Mexican economy:',
+				description:
+					'Linea III is aimed at social housing developers and its advantages, according to financial players in the sector such as Yavo Capital, would generate an economic spill of around 1.5 BLN USD and detonate 72 new economic activities.".',
+				href: "https://www.forbes.com.mx/con-producto-crediticio-buscan-impulsar-vivienda-y-economia-de-mexico/",
+				img: "/opinion-forbes.webp",
+				logo: "/forbes-mexico-logo.webp",
+			},
+		],
+	},
+};
