@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./common/Button";
 import Title from "./common/Title";
 
-const ModuleBackground = ({ title, subtitles, buttonValue, src }) => {
+const ModuleBackground = ({ title, subtitles, buttonValue, src, href }) => {
 	const classesParagraph =
 		"mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48";
 
@@ -19,20 +19,26 @@ const ModuleBackground = ({ title, subtitles, buttonValue, src }) => {
 			<div className="px-4 mx-auto text-center py-24 lg:py-36">
 				<Title title={title} classes={classesTitle} />
 
-				{subtitles.map((sub) => (
-					<p className={classesParagraph} key={sub.id}>
-						{sub.description}
-					</p>
-				))}
+				{subtitles.length && (typeof subtitles !== "string") > 0 ? (
+					subtitles.map((sub) => (
+						<p className={classesParagraph} key={sub.id}>
+							{sub.description}
+						</p>
+					))
+				) : (
+					<p className={classesParagraph}>{subtitles}</p>
+				)}
 
-				<div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-					<Button
-						value={buttonValue}
-						href={"productos-financieros"}
-						arrowLeft={true}
-						classes={classesButton}
-					/>
-				</div>
+				{href && (
+					<div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+						<Button
+							value={buttonValue}
+							href={href}
+							arrowLeft={true}
+							classes={classesButton}
+						/>
+					</div>
+				)}
 			</div>
 		</section>
 	);

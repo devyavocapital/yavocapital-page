@@ -14,7 +14,7 @@ const Button = ({
 			{arrowLeft && (
 				// rome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
 				<svg
-					className="w-3.5 h-3.5 ml-2"
+					className="w-3.5 h-3.5 ml-2 my-auto"
 					aria-hidden="true"
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"

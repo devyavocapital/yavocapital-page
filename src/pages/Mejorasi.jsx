@@ -24,9 +24,10 @@ const Mejorasi = () => {
 		<div>
 			<ModuleBackground
 				src={"bg-[url('/bg-mejorasi.jpg')]"}
-				buttonValue={language ? "More information" : "Más Información"}
+				buttonValue={"Revisa nuestro recorrido"}
 				title={"¿Que es Mejorasi?"}
 				subtitles={subtitles}
+				href={"/mejorasi/cronograma"}
 			/>
 
 			<p className="text-center italic font-bold">
@@ -56,6 +57,7 @@ const Mejorasi = () => {
 						classes={
 							"bg-white uppercase text-center mx-auto my-auto py-5 px-10 flex lg:text-3xl"
 						}
+						href={"/mejorasi/registro"}
 					/>
 				</div>
 			</div>

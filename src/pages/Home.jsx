@@ -18,6 +18,7 @@ const Home = () => {
 					language ? "Learn more about us" : "Descubre más de Nosotros"
 				}
 				src={"bg-[url('/home-bg.jpg')]"}
+				href={"productos-financieros"}
 			/>
 
 			<ModuleCard

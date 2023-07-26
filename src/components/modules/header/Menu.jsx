@@ -9,7 +9,11 @@ const Menu = () => {
 		<nav className="bg-white border-gray-200 w-full">
 			<div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
 				<Link to="/" className="flex items-center">
-					<img src="/logo.webp" className="h-8 mr-3" alt="Yavo capital Logo" />
+					<img
+						src="/logo.webp"
+						className="h-12 mr-3 "
+						alt="Yavo capital Logo"
+					/>
 				</Link>
 				<div className="flex items-center md:order-2">
 					<Dropdown inline label={language ? "Language" : "Idioma"}>
@@ -66,7 +70,7 @@ const Menu = () => {
 						</li>
 						<li>
 							<Link
-								to="local"
+								to="/contacto"
 								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
 							>
 								{language ? "Contact Us" : "Contáctanos"}
