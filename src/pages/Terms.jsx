@@ -13,7 +13,7 @@ const Terms = () => {
 			<div className="w-10/12 md:w-8/12 mx-auto grid">
 				<p className="mb-3">
 					En cumplimiento a la Ley Federal de Protección de datos personales en
-					posesión de particulares (La ley), YAVO CAPITAL, SOCIEDAD ANÓNIMA
+					posesión de los particulares (La ley), YAVO CAPITAL, SOCIEDAD ANÓNIMA
 					PROMOTORA DE INVERSIÓN DE CAPITAL VARIABLE, SOFOM ENR, (YAVO CAPITAL)
 					manifiesta ser responsable del tratamiento de los datos personales que
 					nos proporcione, mismos que serán protegidos y utilizados
@@ -87,9 +87,8 @@ const Terms = () => {
 					</li>
 					<li className="mb-5">
 						<SpanFeatured>DOMICILIO</SpanFeatured>.- El domicilio de YAVO
-						CAPITAL es el ubicado en Jose María Velasco cambiar dirección a Av.
-						Contreras 700, San Jerónimo Lídice, Magdalena Contreras, 10400,
-						Oficina 302, Ciudad de México.
+						CAPITAL es el ubicado en Av. Contreras 700, San Jerónimo Lídice,
+						Magdalena Contreras, 10400, Oficina 302, Ciudad de México.
 					</li>
 					<li className="mb-5">
 						<SpanFeatured>AUTORIZACIÓN</SpanFeatured>.- Al proporcionar sus
@@ -153,7 +152,7 @@ const Terms = () => {
 							notificada a través de un comunicado por escrito enviado a su
 							correo electrónico proporcionado; sin embargo, le recomendamos
 							consultar constantemente nuestro aviso de privacidad en nuestra
-							página de internet www.yavocapital.compara mantenerse actualizado
+							página de internet www.yavocapital.com para mantenerse actualizado
 							de las últimas modificaciones al mismo.
 						</p>
 					</li>

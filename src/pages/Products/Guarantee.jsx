@@ -9,7 +9,7 @@ const Guarantee = () => {
 	return (
 		<div>
 			<ModuleBackground
-				title="¿Qué es el Crédito Integral Línea III de INFONAVIT?"
+				title="¿Qué es un Fideicomiso De Garantía?"
 				subtitles="En palabras sencillas podemos decir que un fideicomiso es un contrato en virtud a través del cual se transmite un bien, dinero o derechos, presentes o futuros, de su propiedad a otra persona, para que esta administre o invierta los bienes en beneficio propio o en beneficio de un tercero."
 				src="bg-[url('/bg-guarantee.jpg')]"
 			/>

@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layouts/Layout";
+import Blog from "./pages/Blog";
+import Post from "./pages/Blog/[name]";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import MeetUs from "./pages/MeetUs";
@@ -26,6 +28,10 @@ function App() {
 				<Route path={"/mejorasi"} element={<Layout />}>
 					<Route path="registro" element={<Register />} />
 					<Route path="cronograma" element={<Cronograma />} />
+				</Route>
+				<Route path={"/blog"} element={<Layout />}>
+					<Route index element={<Blog />} />
+					<Route path=":name" element={<Post />} />
 				</Route>
 				<Route path={"/productos-financieros"} element={<Layout />}>
 					<Route path="credito-integral-linea-3" element={<Credit />} />

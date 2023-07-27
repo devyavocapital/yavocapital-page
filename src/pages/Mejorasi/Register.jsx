@@ -1,5 +1,6 @@
 import { Checkbox, Label, Select, TextInput } from "flowbite-react";
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
 	const [agree, setAgree] = useState(true);
@@ -119,12 +120,12 @@ const Register = () => {
 						<Checkbox id="accept" ref={agreeRef} />
 						<Label className="flex" htmlFor="agree">
 							<p>He leído el </p>
-							<a
+							<Link
 								className="text-cyan-600 hover:underline dark:text-cyan-500 ml-1"
 								href="/forms"
 							>
 								<p> Aviso de privacidad</p>
-							</a>
+							</Link>
 						</Label>
 					</div>
 					<input

@@ -1,9 +1,13 @@
 import { Dropdown } from "flowbite-react";
 import { Link } from "react-router-dom";
 import useLanguage from "../../../hooks/useLanguage";
+import Item from "./Item";
 
 const Menu = () => {
 	const { language, handleLanguage } = useLanguage();
+
+	const classesLink =
+		"block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700";
 
 	return (
 		<nav className="bg-white border-gray-200 w-full">
@@ -42,40 +46,21 @@ const Menu = () => {
 					className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
 				>
 					<ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
-						<li>
-							<Link
-								to="/vehiculo-financiero"
-								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-								aria-current="page"
-							>
-								{language ? "Who are we?" : "¿Quienes Somos?"}
-							</Link>
-						</li>
-						<li>
-							<Link
-								to="/productos-financieros"
-								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-								aria-current="page"
-							>
-								{language ? "Financial Products" : "Productos Financieros"}
-							</Link>
-						</li>
-						<li>
-							<Link
-								to="/mejorasi"
-								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-							>
-								MEJORASÍ
-							</Link>
-						</li>
-						<li>
-							<Link
-								to="/contacto"
-								className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-							>
-								{language ? "Contact Us" : "Contáctanos"}
-							</Link>
-						</li>
+						<Item href={"/vehiculo-financiero"} classes={classesLink}>
+							{language ? "Who are we?" : "¿Quienes Somos?"}
+						</Item>
+						<Item href={"/productos-financieros"} classes={classesLink}>
+							{language ? "Financial Products" : "Productos Financieros"}
+						</Item>
+						<Item href={"/mejorasi"} classes={classesLink}>
+							MEJORASÍ
+						</Item>
+						<Item href={"/contacto"} classes={classesLink}>
+							{language ? "Contact Us" : "Contáctanos"}
+						</Item>
+						<Item href={"/blog"} classes={classesLink}>
+							Blog
+						</Item>
 					</ul>
 				</div>
 			</div>
