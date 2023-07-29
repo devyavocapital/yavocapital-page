@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import ModuleBackground from "../components/modules/ModuleBackground";
 import ModuleCard from "../components/modules/ModuleCard";
 import ModuleNews from "../components/modules/ModuleNews";
@@ -10,6 +11,13 @@ const Home = () => {
 
 	return (
 		<>
+			<Helmet>
+				<title>Yavo Capital</title>
+				<meta
+					name="description"
+					content={language ? home.en.subtitles : home.es.subtitles}
+				/>
+			</Helmet>
 			<ModuleBackground
 				key={language ? home.en.title : home.es.title}
 				title={language ? home.en.title : home.es.title}

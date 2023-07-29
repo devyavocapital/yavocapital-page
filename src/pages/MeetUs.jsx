@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ModuleBackground from "../components/modules/ModuleBackground";
 import ModuleDescription from "../components/modules/ModuleDescription";
 import ModuleOpinions from "../components/modules/ModuleOpinions";
@@ -10,6 +11,9 @@ const MeetUs = () => {
 
 	return (
 		<>
+			<Helmet>
+				<title>{language ? meetUs.en.title : meetUs.es.title}</title>
+			</Helmet>
 			<ModuleBackground
 				buttonValue={
 					language
