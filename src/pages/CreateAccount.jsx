@@ -27,7 +27,7 @@ const CreateAccount = () => {
 		},
 	});
 	return (
-		<main className="h-screen grid mx-auto mt-auto w-5/12 mb-10">
+		<main className="p-5 grid mx-auto mt-auto w-5/12 mb-10">
 			<section className="border-4 border-orange-400 rounded-2xl my-auto p-10">
 				<h1 className="my-auto text-2xl md:text-4xl lg:text-6xl font-bold py-5">
 					Crear Cuenta

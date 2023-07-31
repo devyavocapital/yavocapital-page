@@ -29,7 +29,7 @@ export const home = {
 				title: "Crédito Integral Línea III INFONAVIT",
 				description:
 					"El 100% del Crédito INFONAVIT es financiado por dicha institución y los recursos administrados por YAVO CAPITAL entregando los recursos al Desarrollador mediante ministraciones de acuerdo al avance de obra, en un plazo máximo de construcción del proyecto de 6 meses.",
-				href: "credito-integral-linea-3",
+				href: "productos-financieros/credito-integral-linea-3",
 				img: "/card-home-1.jpg",
 			},
 			{
@@ -37,7 +37,7 @@ export const home = {
 				title: "Fideicomisos de Garantía",
 				description:
 					"El Fideicomiso de Garantía que ofrecemos como servicios especializados asesora al desarrollador desde el mapeo de la necesidad del aportante de la tierra hasta la implementación del Fideicomiso de Garantía; brindando a ambas partes certeza legal y financiera del Proyecto.",
-				href: "fideicomiso-de-garantia",
+				href: "productos-financieros/fideicomiso-de-garantia",
 				img: "/card-home-2.webp",
 			},
 		],
@@ -64,7 +64,7 @@ export const home = {
 				description: `LINEA III: is the mechanism established by INFONAVIT to provide funding for developers of affordable housing, whereby approved developers of identified projects can avail up to 100% of the total funding for such projects/units. While the affirmation is correct, INFONAVIT sees this as a financing tool for the rights holder, and the rights holder will be buying a property in pre-sale using his/her credit.
 
 					Bottom line, Linea III as a program is designed to enable contributors of INFONAVIT to acquire properties within the middle-income / affordable housing segment`,
-				href: "credito-integral-linea-3",
+				href: "productos-financieros/credito-integral-linea-3",
 				img: "/card-home-1.jpg",
 			},
 			{
@@ -72,7 +72,7 @@ export const home = {
 				title: "Fideicomiso de Garantía (Guarantee Trust)",
 				description:
 					"Our Fideicomiso de garantía advises the developer from mapping the needs of the contributor of the land to the implementation of thefideicomiso; providing both parties with legal and financial certainty of the Project.",
-				href: "fideicomiso-de-garantia",
+				href: "productos-financieros/fideicomiso-de-garantia",
 				img: "/card-home-2.webp",
 			},
 		],

@@ -12,7 +12,8 @@ const Products = () => {
 		"text-white bg-orange-500 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800 mx-auto mt-3";
 	const containerClasses =
 		"absolute left-[150px] top-[175px] bg-[#fffcfc9b] shadow border-1 rounded-[17px] h-[330px] flex sm:top-0 sm:translate-y-[100px] md:w-5/12 md:h-[300px] md:relative md:-translate-y-[500px] md:translate-x-[150px] lg:-translate-y-[500px] lg:translate-x-[300px] lg:h-[350px] xl:-translate-y-[500px] xl:translate-x-[500px]";
-	const imgClasses = "h-[600px] w-9/12 object-cover md:w-5/12 md:ml-24";
+	const imgClasses =
+		"h-[600px] w-9/12 object-cover md:w-5/12 md:ml-24 rounded-3xl shadow-xl";
 
 	return (
 		<div>
@@ -49,7 +50,7 @@ const Products = () => {
 					<img
 						alt=""
 						src="/bg-products3.jpg"
-						className="sm:w-10/12 sm:h-4/5 sm:mx-auto sm:object-cover"
+						className="sm:w-10/12 sm:h-4/5 sm:mx-auto sm:object-cover rounded-3xl shadow-xl"
 						loading="lazy"
 					/>
 					<div className="absolute left-[15px] top-[190px] bg-[#fffcfcce] shadow border-1 w-11/12 rounded-[17px] h-[150px] flex sm:relative md:left-0 sm:top-0 sm:w-9/12 sm:mx-auto sm:-translate-y-[100px] md:-translate-y-[200px] ">
@@ -103,13 +104,13 @@ const Products = () => {
 					<img
 						alt=""
 						src="/bg-products1.jpg"
-						className="h-[600px] w-9/12 object-cover sm:w-6/12 sm:mr-10"
+						className="h-[600px] w-9/12 object-cover sm:w-6/12 sm:mr-10 rounded-3xl shadow-xl"
 						loading="lazy"
 					/>
 				</div>
 			</div>
 
-			<div className="flex justify-evenly my-6">
+			<div className="grid md:flex justify-evenly my-6">
 				<div className="max-w-sm md:max-w-md lg:max-w-lg w-11/12 mx-auto my-5 md:mb-0 border rounded-lg shadow">
 					<Image
 						classes={"rounded-t-lg w-full h-[200px] object-cover"}
@@ -132,7 +133,7 @@ const Products = () => {
 											the work, within a maximum period of construction of the
 											project of 6 months.
 										</p>
-										<ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-gray-700">
+										<ol className="pl-5 mt-2 space-y-1 list-decimal list-inside text-gray-700">
 											<li>
 												<SpanFeatured>FINANCING </SpanFeatured>: up to 100% of
 												the total value of the project.
@@ -163,7 +164,7 @@ const Products = () => {
 											acuerdo al avance de obra, en un plazo máximo de
 											construcción del proyecto de 6 meses.
 										</p>
-										<ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-gray-700">
+										<ol className="pl-5 mt-2 space-y-1 list-decimal list-inside text-gray-700">
 											<li>
 												<SpanFeatured>FINANCIAMIENTO</SpanFeatured>: hasta el
 												100 % del valor total del proyecto.

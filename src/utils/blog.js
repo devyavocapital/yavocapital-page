@@ -5,7 +5,7 @@ export const blogs = [
 			"Importancia del Desarrollo de viviendas o casa habitación en México",
 		description:
 			"Te explicaremos la importancia de los desarrollos inmobiliarios especifícamente de vivienda, en México.",
-		url: "/blog/importancia-desarrollo-viviendas-mexico",
+		url: "/blog-financiero/importancia-desarrollo-viviendas-mexico",
 		img: "/blog/importancia-del-desarrollo.jpg",
 	},
 	{
@@ -13,7 +13,7 @@ export const blogs = [
 		title: "Vehículo financiero para el desarrollo inmobiliario",
 		description:
 			"Yavo Capital es un vehículo financiero que te permitirá llevar a cabo ese proyecto de desarrollo inmobiliario y volverlo una realidad",
-		url: "/blog/vehiculo-financiero-para-desarrollo-inmobiliario",
+		url: "/blog-financiero/vehiculo-financiero-para-desarrollo-inmobiliario",
 		img: "/blog/vehiculo-financiero.jpg",
 	},
 	{
@@ -21,7 +21,7 @@ export const blogs = [
 		title: "Importancia de una SOFOM en bienes raíces, en tiempo de COVID-19",
 		description:
 			"Hablaremos de la importancia de la existencia de entidades financieras como lo es Yavo Capital, SOFOM en bienes raíces en tiempo de COVID-19",
-		url: "/blog/importancia-sofom-en-bienes-raices-en-covid-19",
+		url: "/blog-financiero/importancia-de-una-sofom-en-bienes-raices-en-covid-19",
 		img: "/blog/importancia-sofom.jpg",
 	},
 	{
@@ -29,7 +29,7 @@ export const blogs = [
 		title: "¿Que productos financieros me ofrece una SOFOM en bienes raíces?",
 		description:
 			"Te mencionaremos 2 productos financieros que una SOFOM en bienes raíces te ofrece para que tu desarrollo de vivienda se vuelva una realidad",
-		url: "/blog/productos-financieros-que-ofrece-una-sofom",
+		url: "/blog-financiero/productos-financieros-que-ofrece-una-sofom-en-bienes-raices",
 		img: "/blog/productos-financieros-sofom.jpg",
 	},
 	{
@@ -37,7 +37,7 @@ export const blogs = [
 		title: "Fideicomiso de Garantía en un desarrollo inmobiliario",
 		description:
 			"A lo largo de este artículo te explicaremos como uno de los productos financieros de Yavo Capital puede ayudarte: un fideicomiso de garantía",
-		url: "/blog/fideicomiso-de-garantia-en-un-desarrollo-inmobiliario",
+		url: "/blog-financiero/fideicomiso-de-garantia-en-un-desarrollo-inmobiliario",
 		img: "/blog/fideicomiso-garantia.jpg",
 	},
 	{
@@ -46,7 +46,7 @@ export const blogs = [
 			"¿Como ayuda el Crédito Integral Línea III a mi desarrollo inmobiliario",
 		description:
 			"El principal producto financiero con el que contamos es el Crédito Integral Línea III INFOVANIT, te explicaremos sus requisitos y beneficios.",
-		url: "/blog/credito-integral-linea-iii-desarrollo-inmobiliario",
+		url: "/blog-financiero/como-ayuda-el-credito-linea-iii-a-mi-desarrollo-inmobiliario",
 		img: "/blog/credito-integral-linea-iii.jpg",
 	},
 	{
@@ -54,7 +54,7 @@ export const blogs = [
 		title: "¿Cuál es el objetivo de un desarrollo inmobiliario?",
 		description:
 			"Explicaremos cuál es el objetivo de un desarrollo inmobiliario y cómo se puede considerar un desarrollo exitoso",
-		url: "/blog/objetivo-de-un-desarrollo-inmobiliario",
+		url: "/blog-financiero/cual-es-el-objetivo-de-un-desarrollo-inmobiliario",
 		img: "/blog/objetivo-de-un-desarrollo-inmobiliario.jpg",
 	},
 	{
@@ -62,7 +62,7 @@ export const blogs = [
 		title: "5 Consejos para cumplir tus propósitos financieros",
 		description:
 			"Si es que dentro de tus propósitos de año nuevo está el encontrar una estabilidad financiera, en Yavo Capital te damos los mejores consejos",
-		url: "/blog/cinco-consejos-para-cumplir-tus-propositos-financieros",
+		url: "/blog-financiero/cinco-consejos-para-cumplir-tus-propositos-financieros",
 		img: "/blog/cinco-consejos.jpg",
 	},
 	{
@@ -70,7 +70,7 @@ export const blogs = [
 		title: "¿Que será del desarrollo inmobiliario en México?",
 		description:
 			"A medida que nos acercamos al final del año 2022 y después de haber atravesado un sinfín de acontecimientos nacionales e internacionales",
-		url: "/blog/desarrollo-inmobiliario-en-mexico",
+		url: "/blog-financiero/desarrollo-inmobiliario-en-mexico",
 		img: "/blog/desarrollo-inmobiliario-en-mexico.jpg",
 	},
 	{
@@ -78,7 +78,7 @@ export const blogs = [
 		title: "¿Que es una SOFOM en bienes raíces?",
 		description:
 			"Yavo Capital Financiera es una SOFOM especializada en bienes raíces que tiene como objetivo impulsar el sector del desarrollo inmobiliario",
-		url: "/blog/sofom-en-bienes-raices",
+		url: "/blog-financiero/sofom-en-bienes-raices",
 		img: "/blog/sofom-en-bienes-raices.jpg",
 	},
 	{
@@ -86,7 +86,7 @@ export const blogs = [
 		title: "¿Que es el desarrollo de viviendas y casas habitación?",
 		description:
 			"Descubre qué es y qué implica un proyecto de desarrollo de viviendas, ventajas y los que los compradores e inversionistas buscan en él",
-		url: "/blog/desarrollo-de-viviendas",
+		url: "/blog-financiero/desarrollo-de-viviendas",
 		img: "/blog/desarrollo-de-viviendas.jpg",
 	},
 ];

@@ -24,7 +24,7 @@ const Login = () => {
 		},
 	});
 	return (
-		<main className="h-screen grid mx-auto my-auto w-5/12">
+		<main className="p-5 grid mx-auto my-auto w-11/12 md:w-5/12">
 			<section className="border-4 border-orange-400 rounded-2xl my-auto p-10">
 				<h1 className="my-auto text-2xl md:text-4xl lg:text-6xl font-bold py-5">
 					Login

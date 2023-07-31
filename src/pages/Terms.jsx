@@ -24,7 +24,7 @@ const Terms = () => {
 
 				<h4>TÉRMINOS Y CONDICIONES</h4>
 
-				<ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-gray-700">
+				<ol className="pl-5 mt-2 space-y-1 list-decimal list-inside text-gray-700">
 					<li className="mb-5">
 						<SpanFeatured>OBJETO</SpanFeatured>.- YAVO CAPITAL, trata los datos
 						personales para dar cumplimiento a su objeto, así como para dar

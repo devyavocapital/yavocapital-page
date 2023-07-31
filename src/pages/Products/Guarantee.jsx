@@ -41,7 +41,7 @@ const Guarantee = () => {
 							¿Cuáles son las ventajas de un Fideicomiso de Garantía
 						</SpanFeatured>
 					</h3>
-					<ol class="pl-5 mt-2 mb-5 space-y-1 list-decimal list-inside text-lg">
+					<ol className="pl-5 mt-2 mb-5 space-y-1 list-decimal list-inside text-lg">
 						<li>Armonización de intereses de las partes involucradas</li>
 						<li>Confianza entre los socios del negocio y hacia terceros</li>
 						<li>Imparcialidad del fiduciario</li>

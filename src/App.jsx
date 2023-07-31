@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layouts/Layout";
+import ScrollToTop from "./components/layouts/ScrollTop";
 import Details from "./pages/Account/Details";
 import Profile from "./pages/Account/Profile";
 import Blog from "./pages/Blog";
@@ -20,6 +21,7 @@ import Terms from "./pages/Terms";
 function App() {
 	return (
 		<BrowserRouter>
+			<ScrollToTop />
 			<Routes>
 				<Route path={"/"} element={<Layout />}>
 					<Route index element={<Home />} />
@@ -35,7 +37,7 @@ function App() {
 					<Route path="registro" element={<Register />} />
 					<Route path="cronograma" element={<Cronograma />} />
 				</Route>
-				<Route path={"/blog"} element={<Layout />}>
+				<Route path={"/blog-financiero"} element={<Layout />}>
 					<Route index element={<Blog />} />
 					<Route path=":name" element={<Post />} />
 				</Route>

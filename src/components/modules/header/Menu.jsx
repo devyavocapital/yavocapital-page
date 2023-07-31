@@ -1,70 +1,92 @@
-import { Dropdown } from "flowbite-react";
-import { Link } from "react-router-dom";
 import useLanguage from "../../../hooks/useLanguage";
-import Item from "./Item";
+import ListMenu from "./ListMenu";
 
 const Menu = () => {
 	const { language, handleLanguage } = useLanguage();
 
-	const classesLink =
-		"block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700";
-
 	return (
-		<nav className="bg-white border-gray-200 w-full">
-			<div className="flex flex-wrap items-center justify-center md:justify-between mx-auto p-4">
-				<Link to="/" className="flex items-center">
+		<div className="bg-white border-gray-200 dark:bg-gray-900 w-full lg:flex">
+			<div className="flex flex-wrap items-center justify-between mx-auto p-4 md:p-2 md:w-full md:grid md:grid-cols-[10%_75%_5%]">
+				<a href="/" className="flex items-center">
 					<img
 						src="/logo.webp"
-						className="h-10 xl:h-12 mr-3"
+						className="h-9 md:h-8 xl:h-12 lg:mr-3"
 						alt="Yavo capital Logo"
 					/>
-				</Link>
-				<div className="hidden md:flex items-center md:order-2 md:text-sm">
-					<Dropdown inline label={language ? "Language" : "Idioma"}>
-						<Dropdown.Item onClick={() => handleLanguage(true)}>
-							{language ? "English" : "Inglés"}
-						</Dropdown.Item>
-						<Dropdown.Item onClick={() => handleLanguage(false)}>
-							{language ? "Spanish" : "Español"}
-						</Dropdown.Item>
-					</Dropdown>
-					<Link
-						to="/iniciar-sesion"
-						className="text-gray-800 dark:text-white hover:bg-gray-50 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2"
+				</a>
+				<div className="flex items-center md:order-2">
+					<button
+						type="button"
+						data-dropdown-toggle="language-dropdown-menu"
+						className="inline-flex items-center font-medium justify-center px-4 py-2 md:px-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
 					>
-						{language ? "Login" : "Iniciar Sesión"}
-					</Link>
-					<Link
-						to="/crear-cuenta"
-						className="text-white bg-orange-400 hover:bg-orange-700 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2"
+						{language ? "En" : "Es"}
+					</button>
+					<div
+						className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+						id="language-dropdown-menu"
 					>
-						{language ? "Sign up" : "Crear Cuenta"}
-					</Link>
+						<ul className="py-2 font-medium" role="none">
+							<li>
+								<button
+									type="button"
+									onClick={() => handleLanguage(true)}
+									className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+									role="menuitem"
+								>
+									<div className="inline-flex items-center">
+										{language ? "English" : "Inglés"}
+									</div>
+								</button>
+							</li>
+							<li>
+								<button
+									type="button"
+									onClick={() => handleLanguage(false)}
+									className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+									role="menuitem"
+								>
+									<div className="inline-flex items-center">
+										{language ? "Spanish" : "Español"}
+									</div>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<button
+						data-collapse-toggle="navbar-language"
+						type="button"
+						className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+						aria-controls="navbar-language"
+						aria-expanded="false"
+					>
+						<span className="sr-only">Open main menu</span>
+						{/* rome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+						<svg
+							className="w-5 h-5"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 17 14"
+						>
+							<path
+								stroke="currentColor"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
+								d="M1 1h15M1 7h15M1 13h15"
+							/>
+						</svg>
+					</button>
 				</div>
 				<div
-					id="mega-menu"
-					className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+					className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+					id="navbar-language"
 				>
-					<ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-3 md:mt-0 lg:space-x-4 xl:space-x-8">
-						<Item href={"/vehiculo-financiero"} classes={classesLink}>
-							{language ? "Who are we?" : "¿Quienes Somos?"}
-						</Item>
-						<Item href={"/productos-financieros"} classes={classesLink}>
-							{language ? "Financial Products" : "Productos Financieros"}
-						</Item>
-						<Item href={"/mejorasi"} classes={classesLink}>
-							MEJORASÍ
-						</Item>
-						<Item href={"/contacto"} classes={classesLink}>
-							{language ? "Contact Us" : "Contáctanos"}
-						</Item>
-						<Item href={"/blog"} classes={classesLink}>
-							Blog
-						</Item>
-					</ul>
+					<ListMenu />
 				</div>
 			</div>
-		</nav>
+		</div>
 	);
 };
 

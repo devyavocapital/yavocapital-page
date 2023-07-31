@@ -6,7 +6,7 @@ import SpanFeatured from "../../components/modules/common/SpanFeatured";
 const Credit = () => {
 	const titleClasses = "text-lg my-2 colorPrimary lg:text-2xl lg:my-4";
 	const containerClasses =
-		"absolute left-[150px] top-[175px] bg-[#fffcfc9b] shadow border-1 rounded-[17px] h-[350px] flex sm:top-0 sm:translate-y-[100px] md:w-5/12 md:h-[375px] md:relative md:-translate-y-[500px] md:translate-x-[150px] lg:-translate-y-[500px] lg:translate-x-[300px] lg:h-[450px] xl:-translate-y-[550px] xl:translate-x-[500px] xl:h-[500px]";
+		"absolute left-[150px] top-[175px] bg-[#fffcfc9b] shadow border-1 rounded-[17px] h-[400px] flex sm:top-0 sm:translate-y-[100px] md:w-5/12 md:h-[375px] md:relative md:-translate-y-[500px] md:translate-x-[150px] lg:-translate-y-[500px] lg:translate-x-[300px] lg:h-[450px] xl:-translate-y-[550px] xl:translate-x-[500px] xl:h-[500px]";
 	const imgClasses =
 		"h-[600px] w-9/12 object-cover md:w-7/12 md:ml-24 rounded-3xl shadow-xl";
 
@@ -35,6 +35,14 @@ const Credit = () => {
 			</ModuleFeature>
 
 			<section className="grid mx-auto w-11/12 text-sm my-5 md:w-10/12 lg:text-lg xl:w-8/12">
+				{/* rome-ignore lint/a11y/useMediaCaption: <explanation> */}
+				<video
+					controls
+					className="grid mx-auto rounded-2xl my-5 w-full md:w-8/12"
+				>
+					<source src="/video/intro-yavocapital.mp4" type="video/mp4" />
+				</video>
+
 				<h2 className={`${titleClasses} text-center`}>
 					¿En qué consiste el Crédito Integral Línea III de INFONAVIT?
 				</h2>
@@ -140,13 +148,6 @@ const Credit = () => {
 					value={"Contáctanos para solicitar tu crédito"}
 				/>
 			</section>
-
-			{/* <video
-				src="/video/intro-yavocapital.mp4s"
-				about="intro"
-				autoPlay={true}
-				muted
-			/> */}
 		</main>
 	);
 };

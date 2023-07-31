@@ -4,7 +4,7 @@ import Image from "./Image";
 const Card = ({ title, description, href, img, buttonValue }) => {
 	return (
 		<div className="max-w-sm mb-3 md:mb-0 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-			<Link href={href}>
+			<Link to={href} preventScrollReset={true}>
 				<Image
 					classes={"rounded-t-lg w-full h-[200px] object-cover"}
 					src={img}
@@ -19,7 +19,8 @@ const Card = ({ title, description, href, img, buttonValue }) => {
 					{description}
 				</p>
 				<Link
-					href={href}
+					preventScrollReset={true}
+					to={href}
 					className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800 w-full justify-center row-start-3"
 				>
 					{buttonValue}

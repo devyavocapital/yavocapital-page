@@ -17,6 +17,7 @@ const Home = () => {
 					name="description"
 					content={language ? home.en.subtitles : home.es.subtitles}
 				/>
+				<link rel="canonical" href="https://www.yavocapital.com" />
 			</Helmet>
 			<ModuleBackground
 				key={language ? home.en.title : home.es.title}
